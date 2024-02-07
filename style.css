@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.continer-home{
+    background: url(home/background-home-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.continar-crew{
+    background: url(crew/background-crew-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.continar-destination{
+    background: url(destination/background-destination-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.continar-tec{
+    background: url(technology/background-technology-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.line{
+    width: 608px;
+    height: 1px;
+    background-color: #ffffff63;
+    position: absolute;
+    top: 50px;
+    left: 158px;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    
+
+   
+}
+nav .blur{
+    background-color:#1c435d4f;
+    backdrop-filter: blur(10px);
+    width: 650px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    
+
+
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+
+}
+nav ul li a {
+    padding: 5px;
+    color: white;
+}
+nav ul li span{
+    color: white;
+    padding: 5px;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #fff ;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+main .contet{
+   
+    color: #fff;
+    margin-top: 113px;
+    margin-left: 40px;
+   
+}
+.contet h1{
+    font-size: 200px;
+    
+}
+.contet{
+    margin-bottom: 40px;
+}
+.contet h4{
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    color:#b6b6b6;
+
+}
+
+.contet p{
+    font-size: 16px;
+    padding: 24px;
+    line-height: 1.8;
+    width: 600px;
+    margin-bottom: 20px;
+    color:#b6b6b6;
+}
+main .hero{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 100px;
+    position: relative;
+}
+.hero h5{
+    position: absolute;
+    top: 99px;
+    left: 54px;
+    font-size: 38px;
+
+   
+    
+}
+@media (max-width:390px){
+    main{
+flex-direction: column;
+    }
+    .continer-home{
+        background-image: url(home/background-home-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .contet{
+        text-align: center;
+    }
+    main .hero{
+      margin-right: 0;
+    }
+    nav .blur{
+        width: 280px;
+    }
+    .contet p{
+        width: 399px;
+    }
+    .contet h1{
+        font-size: 80px;
+        
+    }
+    nav ul{
+        display: flex;
+        gap: 5px;
+    
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    nav ul li span{
+        
+        padding: 0;
+    }
+    
+}
+@media (max-width:999px){
+    main{
+flex-direction: column;
+    }
+    .continer-home{
+        background-image: url(home/background-home-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .contet{
+        text-align: center;
+    }
+    nav .blur{
+        width: 400px;
+    }
+    main .hero{
+        margin-right: 0;
+      }
+      nav ul{
+       
+        gap: 5px;
+    
+    }
+    .contet p{
+        width: 399px;
+    }
+    .contet h1{
+        font-size: 100px;
+        
+    }
+}
+/* start destions*/
+
+.main-dest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    flex-direction: row-reverse;
+}
+main .desintoin-contet{
+   
+    color: #fff;
+    margin-top:70px;
+    margin-right:10%;
+   
+}
+.desintoin-contet ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.desintoin-contet ul li a{
+    color: white;
+}
+.desintoin-contet  ul li a:hover{
+    border-bottom: 3px solid #fff ;
+}
+.desintoin-contet h1{
+    font-size: 150px;
+    text-align: center;
+    
+}
+
+
+.desintoin-contet p{
+    font-size: 16px;
+   
+    line-height: 1.8;
+    width: 500px;
+    margin-bottom: 20px;
+    color:#b6b6b6;
+}
+
+.desintoin-hero h3{
+ 
+    margin-left: 50px;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+   
+    
+}
+.desintoin-hero img{
+    margin-top: 91px;
+    margin-left: 70px;
+
+}
+
+
+@media (max-width:500px){
+    .main-dest{
+flex-direction: column;
+    }
+    .continar-destination{
+        background-image: url(destination/background-destination-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .desintoin-contet{
+        text-align: center;
+    }
+    .desintoin-hero h3{
+        margin-left: 21px;
+        margin-top: 30px;
+    
+    }
+    .desintoin-hero img{
+        margin-left: 0;
+    }
+    .desintoin-contet p{
+        width: 399px;
+    }
+    .desintoin-contet h1{
+        font-size: 80px;
+    }
+    
+}
+@media (max-width:999px){
+    .main-dest{
+flex-direction: column;
+    }
+    .continar-destination{
+        background-image: url(destination/background-destination-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .desintoin-contet{
+        text-align: center;
+    }
+    .desintoin-hero h3{
+        margin-left: 21px;
+        margin-top: 30px;
+    
+    }
+    .desintoin-hero img{
+        margin-left: 0;
+    }
+    .desintoin-contet p{
+        width: 399px;
+    }
+    .desintoin-contet h1{
+        font-size: 80px;
+    }
+}
+
+
+/* end destions*/
+/* start crew*/
+
+.main-crew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    
+}
+main .crew-contet{
+   
+    color: #fff;
+    
+    margin-left:78px;
+   
+}
+.crew-contet h1{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.crew-contet p{
+    font-size: 16px;
+    line-height: 1.8;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#b6b6b6;
+}
+
+.crew-contet h3{
+ 
+    margin-left: 50px;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+    
+   
+    
+}
+.crew-contet h4{
+    text-align: center;
+    margin-top: 20px;
+}
+.crew-hero img{
+    margin-top: 91px;
+    margin-left: 70px;
+
+}
+
+
+@media (max-width:399px){
+    .main-crew{
+flex-direction: column;
+text-align: center;
+    }
+    .continar-crew{
+        background-image: url(crew/background-crew-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .crew-contet{
+        text-align: center;
+    }
+    .crew-hero img{
+        max-width: 100%;
+    /* text-align: center; */
+      margin-left: 5px;
+    }
+    .crew-contet p{
+        width: 398px;
+    }
+    .crew-contet h3{
+ margin-bottom: 0;
+            margin-left: 21px;
+            margin-top: 30px;
+        
+        
+    }
+}
+@media (max-width:999px){
+    .main-crew{
+flex-direction: column;
+    }
+    .continar-crew{
+        background-image: url(crew/background-crew-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .crew-contet{
+        text-align: center;
+    }
+    .crew-hero img{
+        max-width: 100%;
+    /* text-align: center; */
+      margin-left: 5px;
+    }
+    .crew-contet p{
+        width: 398px;
+    }
+    .crew-contet h3{
+ margin-bottom: 0;
+        margin-left: 21px;
+        margin-top: 30px;
+    
+    
+}
+
+}
+
+
+
+
+/* end crew*/
+/* start techology*/
+
+.main-tec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    
+}.main-tec .all{
+    display: flex;
+    flex-direction: column;
+}
+.main-tec .circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+   
+}.main-tec .all .circle.one{
+    background-color: #fff;
+}
+.main-tec .all .circle.two{
+    background-color: #ffffff00;
+    border: 1px solid #ffffff88;
+    color: #fff;
+}
+.main-tec .all .circle.three{
+    background-color: #ffffff00;
+    border: 1px solid #ffffff88;
+    color: #fff;
+}
+
+.main-tec .circle span{
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    font-size: 20px;
+    display: block;
+
+
+}
+main .tec-contet{
+   
+    color: #fff;
+    
+    margin-right:10%;
+   
+}
+.tec-contet h1{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.tec-contet p{
+    font-size: 16px;
+    line-height: 1.8;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#b6b6b6;
+}
+
+.tec-contet h3{
+ 
+    margin-left: 50px;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+    
+   
+    
+}
+
+.tec-contet h4{
+    text-align: center;
+    margin-top: 20px;
+}
+.tec-hero img{
+    margin-top: 91px;
+    margin-left: 70px;
+    width: 500px;
+
+}
+
+
+@media (max-width:500px){
+    .main-tec{
+flex-direction: column;
+    }
+    .continar-tec{
+        background-image: url(technology/background-technology-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .tec-contet{
+        text-align: center;
+    }
+    .tec-contet p{
+        width: 399px;
+    }
+    .tec-hero img{
+        width:440px;
+        margin-left: 0;
+    }
+    .main-tec .circle{
+        display: none;
+
+    }
+    .tec-contet h3{
+        margin-bottom: 0;
+               margin-left: 21px;
+               margin-top: 30px;
+           
+           
+       }
+    
+}
+@media (max-width:999px){
+    .main-tec{
+flex-direction: column;
+    }
+    .continar-tec{
+        background-image: url(technology/background-technology-tablet.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        display: none;
+    }
+    .tec-contet{
+        text-align: center;
+    }
+    .tec-contet p{
+        width: 399px;
+    }
+    .tec-hero img{
+        width:440px;
+        margin-left: 0;
+    }
+    .main-tec .circle{
+        display: none;
+
+    }
+    .tec-contet h3{
+        margin-bottom: 0;
+               margin-left: 21px;
+               margin-top: 30px;
+           
+           
+       }
+    
+    
+}
+
+
+/*end techonloy*/
